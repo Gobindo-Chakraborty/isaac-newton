@@ -1,0 +1,47 @@
+:root {
+  /* Colors */
+  --color-primary: #34252c;
+  --color-secondary: #211c19;
+
+  --color-green-800: #698b11;
+
+  --color-gray-500: #9f7e8d;
+  --color-gray-100: #eeeeee;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Gradients */
+
+  /* Font-family */
+
+  /* Font-size */
+  --font-size-display: 4rem;
+
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+
+  --font-size-body: 1.5rem;
+  --font-size-body-sm: 1.25rem;
+
+  --font-size-small: 1rem;
+  --font-size-tiny: 0.9375rem;
+
+  /* Font-weight */
+
+  /* Line-height */
+
+  /* Letter-spacing */
+
+  /* Section-space */
+  --section-space: 5.625rem;
+
+  /* Shadow */
+  --shadow-sm: 7px 8px 4px 0 rgba(0, 0, 0, 0.25);
+  --shadow-lg: 20px 15px 4px 0 rgba(0, 0, 0, 0.25);
+
+  /* Border-radius */
+
+  /* Transition */
+}
