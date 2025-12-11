@@ -14,32 +14,39 @@
   /* Gradients */
 
   /* Font-family */
+  --font-primary: "Inter", sans-serif;
 
   /* Font-size */
-  --font-size-display: 4rem;
+  --font-size-display: 3.2rem;
 
-  --font-size-h1: 3rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.75rem;
+  --font-size-h1: 2.4rem;
+  --font-size-h2: 1.8rem;
+  --font-size-h3: 2rem;
 
   --font-size-body: 1.5rem;
-  --font-size-body-sm: 1.25rem;
+  --font-size-body-md: 1.5rem;
+  --font-size-body-sm: 1.4rem;
+  --font-size-body-tiny: 1.2rem;
 
-  --font-size-small: 1rem;
-  --font-size-tiny: 0.9375rem;
+  --font-size-sm-1: 1.4rem;
+  --font-size-sm-2: 1.3rem;
+  --font-size-sm-3: 1.2rem;
 
   /* Font-weight */
+  --weight-regular: 400;
+  --weight-bold: 600;
 
   /* Line-height */
 
   /* Letter-spacing */
 
   /* Section-space */
-  --section-space: 5.625rem;
+  --section-space: 5rem;
 
   /* Shadow */
   --shadow-sm: 7px 8px 4px 0 rgba(0, 0, 0, 0.25);
-  --shadow-lg: 20px 15px 4px 0 rgba(0, 0, 0, 0.25);
+  --shadow-md: 7px 7px 4px 0 rgba(0, 0, 0, 0.25);
+  --shadow-lg: 8px 5px 4px 0 rgba(0, 0, 0, 0.25);
 
   /* Border-radius */
 
