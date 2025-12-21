@@ -73,24 +73,39 @@
     <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="./assets/images/logo.png" alt="Logo" />
-      <nav>
-        <a href="/#home">Home</a>
-        <a href="/#my-discoviries">My Discoveries</a>
-        <a href="/#gallery">Gallery</a>
-        <a href="/#legacy">Legacy</a>
-        <a href="/#contact-me">Contact me</a>
-      </nav>
-      <div>
-        <a href="#">Light</a>
-        <a href="#">Dark</a>
-        <a href="#">Auto</a>
-      </div>
-      <div>
-        <a href="./dive-deeper.html">Dive Deeper</a>
+    <header class="header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            width="62"
+            height="33"
+            alt="Isaac Newton"
+          />
+        </a>
+
+        <nav class="navbar">
+          <a href="/#home">Home</a>
+          <a href="/#my-discoviries">My Discoveries</a>
+          <a href="/#gallery">Gallery</a>
+          <a href="/#legacy">Legacy</a>
+          <a href="/#contact-me">Contact me</a>
+          <div>
+            <a href="#">Light</a>
+            <a href="#">Dark</a>
+            <a href="#">Auto</a>
+          </div>
+          <div>
+            <a href="./dive-deeper.html">Dive Deeper</a>
+          </div>
+        </nav>
+
+        <button type="button" class="open-menu-btn" aria-label="Open menu">
+          <img src="./assets/icons/mobile-menu-icon.svg" alt="" />
+        </button>
       </div>
     </header>
+
     <main>
       <section id="home">
         <img src="./assets/images/isaac-newton.jpg" alt="Isaac Newton" />
