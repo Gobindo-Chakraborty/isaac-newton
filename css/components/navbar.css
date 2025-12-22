@@ -4,5 +4,22 @@
   top: 0;
   bottom: 0;
   max-width: 212px;
-  left: -212px;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+}
+
+.navbar .close-menu-btn {
+  margin: 15px;
+  margin-left: auto;
+}
+
+.navbar,
+.navbar ul li,
+.navbar .theme-option {
+  text-align: center;
+}
+
+.theme-btn {
+  margin-inline: auto;
 }

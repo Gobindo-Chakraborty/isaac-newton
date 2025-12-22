@@ -16,4 +16,15 @@ body {
   outline-offset: 2px;
 }
 
-/* Typography */
+button {
+  color: var(--color-gray-100);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-secondary);
+  opacity: 0.5;
+  z-index: 1;
+  pointer-events: none;
+}
