@@ -10,8 +10,12 @@
 }
 
 .navbar .close-menu-btn {
-  margin: 15px;
+  padding: 15px;
   margin-left: auto;
+}
+
+.navbar .close-menu-btn:hover {
+  background-color: var(--color-secondary);
 }
 
 .navbar,
@@ -22,4 +26,20 @@
 
 .theme-btn {
   margin-inline: auto;
+  width: 100%;
+}
+
+.theme-btn span img {
+  display: inline;
+  padding: 1px;
+}
+
+.nav-link {
+  font-size: var(--font-size-sm-1);
+  font-weight: var(--weight-bold);
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: var(--color-green-800);
 }
