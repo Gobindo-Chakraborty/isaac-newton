@@ -72,7 +72,7 @@
     <!-- JS -->
     <script type="module" src="./js/main.js" defer></script>
   </head>
-  <body>
+  <body data-page="index">
     <header class="header">
       <div class="container">
         <a href="/" class="logo">
@@ -84,8 +84,13 @@
           />
         </a>
 
-        <nav class="navbar">
-          <button class="close-menu-btn" type="button" aria-label="Close menu">
+        <nav class="navbar" data-navbar>
+          <button
+            class="close-menu-btn"
+            type="button"
+            aria-label="Close menu"
+            data-nav-toggler
+          >
             <img src="./assets/icons/cancel-icon.svg" alt="" />
           </button>
 
@@ -128,35 +133,44 @@
             <a href="#" class="theme-item nav-link">Device theme</a>
           </div>
 
-          <a href="./dive-deeper.html" class="dive-deeper nav-link"
-            >Dive Deeper</a
-          >
+          <a href="./dive-deeper.html" class="dive-deeper"
+            >Dive Deeper<img src="./assets/icons/double-arrow-icon.svg" alt=""
+          /></a>
         </nav>
 
-        <button type="button" class="open-menu-btn" aria-label="Open menu">
+        <button
+          type="button"
+          class="open-menu-btn"
+          aria-label="Open menu"
+          data-nav-toggler
+        >
           <img src="./assets/icons/mobile-menu-icon.svg" alt="" />
         </button>
 
-        <div class="overlay"></div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
       </div>
     </header>
 
     <main>
       <section id="home">
-        <img src="./assets/images/isaac-newton.jpg" alt="Isaac Newton" />
-        <div>
-          <p>Hello, my name is</p>
-          <h1>Isaac Newton</h1>
-          <p>
+        <img
+          src="./assets/images/isaac-newton.jpg"
+          alt="Isaac Newton"
+          class="profile-img"
+        />
+        <div class="profile-description">
+          <p class="profile-title">Hello, my name is</p>
+          <h1 class="profile-name">Isaac Newton</h1>
+          <p class="profile-text">
             You may know me as the man who discovered gravity, but my work spans
             mathematics, physics, and astronomy. Explore my discoveries and see
             how I changed the way we understand the universe!
           </p>
-          <a href="./dive-deeper.html"
-            >Dive Deeper <img src="./assets/icons/double-arrow-icon.svg" alt=""
+          <a href="./dive-deeper.html" class="profile-dive-deeper"
+            >Dive Deeper<img src="./assets/icons/double-arrow-icon.svg" alt=""
           /></a>
         </div>
-        <article>
+        <article class="about-me">
           <h2>About Me</h2>
           <img
             src="./assets/images/newton-house-with-apple-tree.jpg"

@@ -1,0 +1,91 @@
+/* Home */
+.profile-img {
+  margin-top: 71px;
+  width: 120px;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+}
+
+.profile-description {
+  text-align: center;
+}
+
+.profile-title {
+  font-weight: var(--weight-bold);
+  font-size: 1.5rem;
+  color: var(--color-green-800);
+  text-transform: uppercase;
+  margin-top: 2.2rem;
+  line-height: normal;
+}
+
+.profile-name {
+  font-weight: 800;
+  font-size: var(--font-size-display);
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+}
+
+.profile-text {
+  padding-inline: 5.4rem;
+  margin-top: 1.2rem;
+  font-weight: 300;
+}
+
+.profile-dive-deeper {
+  background-color: var(--color-primary);
+  width: 138px;
+  height: 31px;
+  border-radius: 19px;
+  margin-inline: auto;
+  padding: 7px 18px;
+  font-size: var(--font-size-sm-1);
+  font-weight: var(--weight-bold);
+  line-height: normal;
+  margin-top: 33px;
+}
+
+.profile-dive-deeper img {
+  display: inline-block;
+  width: 1.3rem;
+  height: auto;
+  margin-left: 6px;
+}
+
+.profile-dive-deeper:hover {
+  background-color: var(--color-green-800);
+}
+
+.about-me {
+  background-color: var(--color-primary);
+  margin-top: 4.7rem;
+  margin-inline: 2rem;
+  padding-inline: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.about-me h2 {
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  margin-top: 1.7rem;
+  display: inline-block;
+  line-height: normal;
+  font-size: var(--font-size-h2);
+}
+
+.about-me img {
+  margin-top: 1.9rem;
+  border-radius: 20px;
+}
+
+.about-me p {
+  font-weight: 300;
+  padding-top: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+/* My Discoveries */
