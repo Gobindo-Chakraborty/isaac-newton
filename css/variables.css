@@ -43,6 +43,9 @@
   /* Section-space */
   --section-space: 5rem;
 
+  /* Scroll-space */
+  --scroll-margin-top: 7.1rem;
+
   /* Shadow */
   --shadow-sm: 7px 8px 4px 0 rgba(0, 0, 0, 0.25);
   --shadow-md: 7px 7px 4px 0 rgba(0, 0, 0, 0.25);

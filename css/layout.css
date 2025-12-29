@@ -2,8 +2,16 @@ body {
   background-color: var(--color-secondary);
 }
 
+main {
+  padding-top: 2.1rem;
+}
+
+section {
+  margin-top: var(--section-space);
+  scroll-margin-top: var(--scroll-margin-top);
+}
+
 .container {
   width: 100%;
   margin-inline: auto;
-  padding-inline: 2rem;
 }

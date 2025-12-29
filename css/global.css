@@ -8,6 +8,9 @@ body {
   font-size: var(--font-size-body);
   font-weight: var(--weight-regular);
   color: var(--color-gray-100);
+}
+
+body p {
   line-height: 1.5;
 }
 
@@ -20,6 +23,7 @@ button {
   color: var(--color-gray-100);
 }
 
+/* Utility Classes */
 .overlay {
   position: fixed;
   background-color: var(--color-secondary);
@@ -32,4 +36,21 @@ button {
 .active {
   opacity: 0.5;
   pointer-events: all;
+}
+
+/* Typography */
+.section-heading {
+  font-size: var(--font-size-h1);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: var(--font-size-body-tiny);
+  color: var(--color-green-800);
+  line-height: 1.25;
+  margin-top: 6px;
+  text-align: center;
+  margin-inline: 2.8rem;
 }
