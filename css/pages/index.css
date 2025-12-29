@@ -87,6 +87,71 @@
 
 /* My Discoveries */
 
+.theory-card {
+  background-color: var(--color-primary);
+  margin-top: 3.1rem;
+  margin-inline: 2rem;
+  border-radius: 20px;
+  padding: 2.3rem 2rem 1.6rem 2rem;
+  text-align: center;
+  max-width: fit-content;
+}
+
+.theory-card:first-of-type {
+  margin-top: 2.8rem;
+}
+
+.theory-card img {
+  border-radius: var(--radius-1);
+}
+
+.theory-card h2 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--weight-bold);
+  margin-top: 10px;
+}
+
+.theory-card p {
+  margin-top: 6px;
+  max-width: 23.7rem;
+  margin-inline: auto;
+}
+
+.book-card-container {
+  margin-top: 4.7rem;
+  text-align: center;
+}
+.book-card-container h1 {
+  font-size: var(--font-size-h2);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+}
+
+.book-card {
+  margin-top: 2.7rem;
+  background-color: var(--color-primary);
+  border-radius: 3.2rem;
+  padding: 2.3rem 2rem 1.5rem 2rem;
+  margin-inline: 2rem;
+  max-width: fit-content;
+}
+
+.book-card img {
+  border-radius: var(--radius-1);
+}
+
+.book-card h2 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--weight-bold);
+  margin-top: 1rem;
+}
+
+.book-card p {
+  margin-top: 6px;
+  margin-inline: 2px;
+}
+
 /* Gallery */
+
 /* My legacy */
 /* Contact Me */
