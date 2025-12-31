@@ -196,4 +196,47 @@
 }
 
 /* My legacy */
+.legacy {
+  text-align: center;
+}
+
+.legacy-heading {
+  font-size: var(--font-size-h2);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+  margin-top: 3.4rem;
+}
+
+.legacy-text {
+  margin-top: 3.5rem;
+  margin-inline: 2.4rem;
+}
+
+.research-fund {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.research-fund img {
+  width: clamp(6.8rem, 10vw, 11.1rem);
+  height: auto;
+}
+.fund-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.fund-text h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--weight-bold);
+}
+
+.fund-text p {
+  width: 23rem;
+}
+
 /* Contact Me */
