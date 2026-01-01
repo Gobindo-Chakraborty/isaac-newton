@@ -240,3 +240,98 @@
 }
 
 /* Contact Me */
+.contact-form {
+  border: 1px solid var(--color-gray-500);
+  border-radius: 2rem;
+  margin-top: 2.4rem;
+  margin-inline: 2rem;
+  padding: 1.3rem 1.4rem 2rem;
+}
+
+.contact-form p {
+  text-align: center;
+}
+
+.user-data {
+  margin-top: 2.7rem;
+  margin-inline: 1.2rem;
+}
+
+.input-field {
+  margin-bottom: 1.6rem;
+}
+
+.input-field:last-of-type {
+  margin-bottom: 0;
+}
+
+label {
+  margin-left: 2px;
+}
+
+input {
+  margin-top: 8px;
+  width: 100%;
+  height: 3.3rem;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 1rem;
+  padding: 8px 14px 10px;
+  color: var(--color-gray-500);
+}
+
+input::placeholder {
+  color: var(--color-gray-500);
+  font-size: var(--font-size-sm-3);
+}
+
+.submit-btn {
+  background-color: var(--color-green-800);
+  width: 100%;
+  border-radius: 1rem;
+  font-weight: var(--weight-bold);
+  line-height: 1.5;
+  text-align: center;
+  padding-block: 7px;
+  margin-top: 2.6rem;
+  transition: 0.1s;
+}
+
+.submit-btn:hover {
+  background-color: #181513;
+  color: var(--color-gray-500);
+}
+
+.contact-links {
+  text-align: center;
+  margin-top: 2.1rem;
+  margin-inline: 2.7rem;
+}
+
+.contact-links_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-top: 2.1rem;
+}
+
+.contact-links_list div {
+  background-color: var(--color-primary);
+  border-radius: 2rem;
+  padding: 2.6rem 2.6rem 2.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.contact-links_list div img {
+  width: 6.3rem;
+  height: auto;
+}
+
+.contact-links_list div h3 {
+  font-weight: var(--weight-regular);
+  font-size: var(--font-size-body-md);
+  line-height: 1.5;
+}

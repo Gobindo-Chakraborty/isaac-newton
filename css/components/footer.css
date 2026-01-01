@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--color-primary);
+  margin-block-start: 2.1rem;
+  padding-bottom: 3.9rem;
+}
+
+.footer .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2.8rem;
+  gap: 1.7rem;
+}
+
+.footer .icons img {
+  width: 2.2rem;
+  height: auto;
+}
+
+.footer p {
+  font-size: var(--font-size-sm-2);
+  font-weight: 300;
+  text-align: center;
+}
+
+.copyright-text {
+  margin-top: 1.9rem;
+}
+
+.copyright-text span {
+  font-weight: 500;
+}
+
+.copyright-text .copyright-legacy {
+  margin-inline: 3.8rem 3.7rem;
+}
+
+.copyright-text .copyright-reserve {
+  margin-inline: 5rem;
+}
