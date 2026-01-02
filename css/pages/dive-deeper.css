@@ -1,0 +1,78 @@
+.legacy-continues .section-heading {
+  font-size: var(--font-size-h2);
+}
+
+.section-text {
+  text-align: center;
+  margin-inline: 3.2rem;
+  margin-top: 1.3rem;
+}
+
+.today-universe {
+  margin-top: 3rem;
+  margin-inline: 2rem;
+  text-align: center;
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.today-universe .img-wrapper {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.today-universe .img-wrapper img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.today-universe p {
+  padding: 6px 15px 10px 15px;
+}
+
+.today-universe p span {
+  text-decoration: underline;
+}
+
+.today-universe p span:hover {
+  color: var(--color-green-800);
+  cursor: pointer;
+}
+
+.quotes-section {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.quotes-section h1 {
+  font-size: var(--font-size-h2);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+}
+
+.quotes-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  gap: 2.3rem;
+  margin-top: 2.2rem;
+  margin-bottom: 8.7rem;
+}
+
+.quotes-wrapper div img {
+  width: 9px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.quotes-wrapper div {
+  background-color: var(--color-primary);
+  width: 28rem;
+  padding: 14px 47px 13px 48px;
+  border-radius: 1rem;
+}
+
+.quotes-wrapper div p {
+  padding-top: 2px;
+  font-weight: 500;
+}
