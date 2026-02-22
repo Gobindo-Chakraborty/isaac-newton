@@ -8,15 +8,44 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.header .container {
+.header__container {
   display: flex;
   justify-content: space-between;
   padding-top: 8px;
   padding-bottom: 9px;
-  padding-inline: 2rem;
 }
 
-.header .open-menu-btn {
+.logo {
+  margin-left: 2rem;
+}
+
+.logo img {
+  height: 33px;
+  width: auto;
+}
+
+.open-menu-btn {
   margin-top: 1px;
   margin-bottom: 2px;
+  margin-right: 2rem;
+}
+
+@media (min-width: 575px) {
+  .header__container {
+    padding-top: 14px;
+    padding-bottom: 17px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo img {
+    height: 60px;
+    width: auto;
+  }
+
+  .open-menu-btn {
+    display: none;
+  }
 }

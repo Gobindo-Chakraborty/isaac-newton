@@ -10,35 +10,42 @@
   transition: 0.3s;
 }
 
-.navbar .close-menu-btn {
+.close-menu-btn {
   padding: 15px;
   margin-left: auto;
 }
 
-.navbar .close-menu-btn:hover {
+.close-menu-btn:hover {
   background-color: var(--color-secondary);
 }
 
 .navbar,
-.navbar ul li,
-.navbar .theme-option {
+.navbar-item {
   text-align: center;
 }
 
-.theme-btn {
+.theme-option__mobile .theme-item {
+  margin-inline: auto;
+}
+
+.theme-desktop {
+  display: none;
+}
+
+.theme-btn__mobile {
   margin-inline: auto;
   width: 100%;
   background-color: var(--color-green-800);
 }
 
-.theme-btn span img {
+.theme-btn__mobile span img {
   display: inline;
   padding: 1px;
   transform: rotate(180deg);
   transition: 0.1s;
 }
 
-.theme-btn:hover span img {
+.theme-btn__mobile:hover span img {
   transform: rotate(0);
 }
 
@@ -78,4 +85,101 @@
 
 .nav-active {
   left: 0;
+}
+
+@media (min-width: 575px) {
+  .navbar {
+    position: static;
+    background-color: transparent;
+    max-width: none;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .close-menu-btn {
+    display: none;
+  }
+
+  .navbar-list {
+    display: flex;
+    margin-right: 127px;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-weight: var(--weight-regular);
+    font-size: 1.6rem;
+    padding: 0;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: transparent;
+    color: var(--color-green-800);
+  }
+
+  .theme-mobile {
+    display: none;
+  }
+
+  .theme-desktop {
+    display: block;
+    position: relative;
+    margin-right: 40px;
+  }
+
+  .theme-btn__desktop {
+    padding: 8px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+  }
+
+  .theme-option__desktop {
+    position: absolute;
+    width: 156px;
+    height: auto;
+    right: -20px;
+    padding-top: 27px;
+    display: none;
+  }
+
+  .theme-option__desktop .theme-item {
+    height: 51px;
+    width: 100%;
+    background-color: var(--color-primary);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    gap: 19px;
+    font-size: 16px;
+    font-weight: var(--weight-regular);
+  }
+
+  .theme-desktop:hover .theme-btn__desktop {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid #383838;
+  }
+
+  .theme-desktop:hover .theme-option__desktop {
+    display: block;
+  }
+
+  .theme-item:hover {
+    background-color: var(--color-green-800);
+  }
+
+  .dive-deeper {
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    padding: 9px 15px;
+    font-size: 16px;
+  }
+
+  .header .dive-deeper img {
+    display: none;
+  }
 }
