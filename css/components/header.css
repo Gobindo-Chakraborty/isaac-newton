@@ -30,6 +30,13 @@
   margin-right: 2rem;
 }
 
+.open-menu-btn .icon {
+  width: 26px;
+  height: 18px;
+  fill: none;
+  color: var(--color-green-800);
+}
+
 @media (min-width: 575px) {
   .header__container {
     padding-top: 14px;

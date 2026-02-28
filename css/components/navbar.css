@@ -15,6 +15,13 @@
   margin-left: auto;
 }
 
+.close-menu-btn .icon {
+  color: var(--color-gray-500);
+  width: 16px;
+  height: 16px;
+  fill: none;
+}
+
 .close-menu-btn:hover {
   background-color: var(--color-secondary);
 }

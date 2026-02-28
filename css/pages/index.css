@@ -49,8 +49,9 @@
 .profile-dive-deeper .icon {
   display: inline-block;
   width: 1.3rem;
-  height: auto;
-  margin-left: 6px;
+  height: 8px;
+  margin-left: 4px;
+  fill: none;
 }
 
 .profile-dive-deeper:hover {
