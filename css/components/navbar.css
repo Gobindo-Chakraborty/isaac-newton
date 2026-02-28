@@ -26,6 +26,7 @@
 
 .theme-option__mobile .theme-item {
   margin-inline: auto;
+  width: 100%;
 }
 
 .theme-desktop {
@@ -38,14 +39,17 @@
   background-color: var(--color-green-800);
 }
 
-.theme-btn__mobile span img {
+.icon-arrow-up {
   display: inline;
-  padding: 1px;
+  margin: 0 0 1px 1px;
   transform: rotate(180deg);
   transition: 0.1s;
+  width: 8px;
+  height: 5px;
+  fill: none;
 }
 
-.theme-btn__mobile:hover span img {
+.theme-btn__mobile:hover .icon-arrow-up {
   transform: rotate(0);
 }
 
