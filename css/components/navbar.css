@@ -15,11 +15,10 @@
   margin-left: auto;
 }
 
-.close-menu-btn .icon {
+.icon-cancel {
   color: var(--color-gray-500);
   width: 16px;
   height: 16px;
-  fill: none;
 }
 
 .close-menu-btn:hover {
@@ -31,19 +30,9 @@
   text-align: center;
 }
 
-.theme-option__mobile .theme-item {
+.theme-btn {
   margin-inline: auto;
   width: 100%;
-}
-
-.theme-desktop {
-  display: none;
-}
-
-.theme-btn__mobile {
-  margin-inline: auto;
-  width: 100%;
-  background-color: var(--color-green-800);
 }
 
 .icon-arrow-up {
@@ -53,14 +42,30 @@
   transition: 0.1s;
   width: 8px;
   height: 5px;
-  fill: none;
 }
 
-.theme-btn__mobile:hover .icon-arrow-up {
-  transform: rotate(0);
+.theme-btn {
+  margin-inline: auto;
 }
 
-.nav-link {
+.theme-options {
+  display: none;
+}
+
+.theme-option {
+  margin-inline: auto;
+  width: 100%;
+}
+
+.theme-btn .icon-moon,
+.theme-option .icon,
+.theme-option .icon + span {
+  display: none;
+}
+
+.nav-link,
+.theme-btn,
+.theme-option {
   font-size: var(--font-size-sm-1);
   font-weight: var(--weight-bold);
   padding: 10px;
@@ -70,16 +75,24 @@
   background-color: var(--color-green-800);
 }
 
-.dive-deeper img {
-  display: inline-block;
-  width: 1.3rem;
-  height: auto;
-  margin-left: 6px;
+.theme-btn:hover {
+  background-color: var(--color-green-700);
 }
 
-.dive-deeper {
+.theme-option:hover {
+  background-color: var(--color-green-600);
+}
+
+.header-dive-deeper .icon-double-arrow {
+  width: 13px;
+  height: 15px;
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+.header-dive-deeper {
   background-color: var(--color-green-800);
-  width: 138px;
+  width: fit-content;
   height: 31px;
   border-radius: 19px;
   margin-inline: auto;
@@ -88,14 +101,29 @@
   font-weight: var(--weight-bold);
   line-height: normal;
   margin-top: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.dive-deeper:hover {
+.header-dive-deeper:hover {
   background-color: var(--color-secondary);
 }
 
 .nav-active {
   left: 0;
+}
+
+.theme-btn-active {
+  background-color: var(--color-green-700);
+}
+
+.open-theme-options {
+  display: block;
+}
+
+.rotate-theme-arrow {
+  transform: rotate(0);
 }
 
 @media (min-width: 575px) {
@@ -132,65 +160,84 @@
     color: var(--color-green-800);
   }
 
-  .theme-mobile {
+  .theme-btn span,
+  .theme-btn .icon-arrow-up,
+  .theme-option span:first-of-type {
     display: none;
   }
 
-  .theme-desktop {
-    display: block;
+  .theme-container {
     position: relative;
     margin-right: 40px;
   }
 
-  .theme-btn__desktop {
+  .theme-btn .icon-moon {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme-btn {
+    height: 40px;
+    width: 40px;
     padding: 8px;
     border-radius: 50%;
     border: 2px solid transparent;
+    background-color: transparent;
   }
 
-  .theme-option__desktop {
+  .theme-btn .icon-moon,
+  .theme-option .icon,
+  .theme-option .icon + span {
+    display: inline-block;
+  }
+
+  .theme-option .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme-options {
     position: absolute;
     width: 156px;
     height: auto;
     right: -20px;
     padding-top: 27px;
+    background-color: var(--color-primary);
     display: none;
   }
 
-  .theme-option__desktop .theme-item {
+  .theme-option {
     height: 51px;
     width: 100%;
-    background-color: var(--color-primary);
     display: flex;
-    place-content: center;
+    justify-content: center;
     align-items: center;
     gap: 19px;
     font-size: 16px;
     font-weight: var(--weight-regular);
   }
 
-  .theme-desktop:hover .theme-btn__desktop {
+  .theme-container:hover .theme-btn {
     background-color: rgba(0, 0, 0, 0.2);
-    border: 2px solid #383838;
+    border-color: #383838;
   }
 
-  .theme-desktop:hover .theme-option__desktop {
+  .theme-container:hover .theme-options {
     display: block;
   }
 
-  .theme-item:hover {
+  .theme-option:hover {
     background-color: var(--color-green-800);
   }
 
-  .dive-deeper {
+  .header-dive-deeper {
     margin-top: 0;
-    width: auto;
-    height: auto;
     padding: 9px 15px;
     font-size: 16px;
   }
 
-  .header .dive-deeper img {
+  .header-dive-deeper .icon {
     display: none;
   }
 }

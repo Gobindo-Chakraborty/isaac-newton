@@ -33,8 +33,13 @@
 .card-hover {
   transition: box-shadow 0.2s ease;
 }
+
 .card-hover:hover {
   box-shadow:
     0 0 0.5rem rgba(255, 255, 255, 0.3),
     0 0 1.5rem rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  fill: none;
 }

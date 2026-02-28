@@ -93,7 +93,7 @@
             aria-label="Close menu"
             data-nav-toggler
           >
-            <svg class="icon">
+            <svg class="icon icon-cancel">
               <use href="./assets/icons/sprite.svg#icon-cancel"></use>
             </svg>
           </button>
@@ -120,77 +120,53 @@
             </li>
           </ul>
 
-          <div class="theme-mobile">
-            <button
-              class="theme-btn__mobile nav-link"
-              type="button"
-              aria-label="Choose theme"
-            >
-              Theme
-              <svg class="icon-arrow-up">
+          <div class="theme-container">
+            <button class="theme-btn" type="button" aria-label="Choose theme">
+              <span>Theme</span>
+              <svg class="icon icon-arrow-up">
                 <use href="./assets/icons/sprite.svg#icon-arrow-up"></use>
               </svg>
+              <svg class="icon icon-moon">
+                <use href="./assets/icons/sprite.svg#icon-moon"></use>
+              </svg>
             </button>
-            <div class="theme-option__mobile">
-              <button type="button" class="theme-item nav-link">
-                Light theme
+
+            <div class="theme-options">
+              <button type="button" class="theme-option">
+                <span>Light theme</span>
+
+                <svg class="icon icon-sun">
+                  <use href="./assets/icons/sprite.svg#icon-sun"></use>
+                </svg>
+                <span>Light</span>
               </button>
-              <button type="button" class="theme-item nav-link">
-                Dark theme
+
+              <button type="button" class="theme-option">
+                <span>Dark theme</span>
+
+                <svg class="icon icon-moon">
+                  <use href="./assets/icons/sprite.svg#icon-moon"></use>
+                </svg>
+                <span>Dark</span>
               </button>
-              <button type="button" class="theme-item nav-link">
-                Device theme
+
+              <button type="button" class="theme-option">
+                <span>Device theme</span>
+
+                <svg class="icon icon-computer">
+                  <use href="./assets/icons/sprite.svg#icon-computer"></use>
+                </svg>
+                <span>Auto</span>
               </button>
             </div>
           </div>
 
-          <div class="theme-desktop">
-            <button
-              class="theme-btn__desktop nav-link"
-              type="button"
-              aria-label="Choose theme"
-            >
-              <img
-                src="./assets/icons/moon-icon.svg"
-                alt=""
-                width="20"
-                height="20"
-              />
-            </button>
-            <div class="theme-option__desktop">
-              <button type="button" class="theme-item">
-                <img
-                  src="./assets/icons/sun-icon.svg"
-                  alt=""
-                  width="20"
-                  height="20"
-                />
-                Light
-              </button>
-              <button type="button" class="theme-item">
-                <img
-                  src="./assets/icons/moon-icon.svg"
-                  alt=""
-                  width="20"
-                  height="20"
-                />
-                Dark
-              </button>
-              <button type="button" class="theme-item">
-                <img
-                  src="./assets/icons/computer-icon.svg"
-                  alt=""
-                  width="20"
-                  height="20"
-                />
-                Auto
-              </button>
-            </div>
-          </div>
-
-          <a href="./dive-deeper.html" class="dive-deeper"
-            >Dive Deeper<img src="./assets/icons/double-arrow-icon.svg" alt=""
-          /></a>
+          <a href="./dive-deeper.html" class="header-dive-deeper"
+            >Dive Deeper
+            <svg class="icon icon-double-arrow">
+              <use href="./assets/icons/sprite.svg#icon-double-arrow"></use>
+            </svg>
+          </a>
         </nav>
 
         <button

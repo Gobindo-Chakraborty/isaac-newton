@@ -4,6 +4,8 @@
   --color-secondary: #211c19;
 
   --color-green-800: #698b11;
+  --color-green-700: rgba(104, 139, 17, 0.5);
+  --color-green-600: rgba(104, 139, 17, 0.1);
 
   --color-gray-500: #9f7e8d;
   --color-gray-100: #eeeeee;
