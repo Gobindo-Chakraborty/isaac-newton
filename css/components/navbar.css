@@ -10,6 +10,10 @@
   transition: 0.3s;
 }
 
+.nav-active {
+  left: 0;
+}
+
 .close-menu-btn {
   padding: 15px;
   margin-left: auto;
@@ -30,6 +34,28 @@
   text-align: center;
 }
 
+.nav-link,
+.theme-btn,
+.theme-option {
+  font-size: var(--font-size-sm-1);
+  font-weight: var(--weight-bold);
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: var(--color-green-800);
+}
+
+.nav-link.active {
+  background-color: var(--color-green-800);
+}
+
+.theme-btn .icon-moon,
+.theme-option .icon,
+.theme-option .icon + span {
+  display: none;
+}
+
 .theme-btn {
   margin-inline: auto;
   width: 100%;
@@ -44,39 +70,29 @@
   height: 5px;
 }
 
-.theme-btn {
-  margin-inline: auto;
+.theme-btn:hover {
+  background-color: var(--color-green-700);
+}
+
+.theme-btn-active {
+  background-color: var(--color-green-700);
+}
+
+.rotate-theme-arrow {
+  transform: rotate(0);
 }
 
 .theme-options {
   display: none;
 }
 
+.open-theme-options {
+  display: block;
+}
+
 .theme-option {
   margin-inline: auto;
   width: 100%;
-}
-
-.theme-btn .icon-moon,
-.theme-option .icon,
-.theme-option .icon + span {
-  display: none;
-}
-
-.nav-link,
-.theme-btn,
-.theme-option {
-  font-size: var(--font-size-sm-1);
-  font-weight: var(--weight-bold);
-  padding: 10px;
-}
-
-.nav-link:hover {
-  background-color: var(--color-green-800);
-}
-
-.theme-btn:hover {
-  background-color: var(--color-green-700);
 }
 
 .theme-option:hover {
@@ -85,13 +101,6 @@
 
 .theme-option-active {
   background-color: var(--color-green-600);
-}
-
-.nav-dive-deeper .icon-double-arrow {
-  width: 13px;
-  height: 15px;
-  margin-left: 6px;
-  margin-top: 2px;
 }
 
 .nav-dive-deeper {
@@ -110,24 +119,15 @@
   justify-content: center;
 }
 
+.nav-dive-deeper .icon-double-arrow {
+  width: 13px;
+  height: 15px;
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
 .nav-dive-deeper:hover {
   background-color: var(--color-secondary);
-}
-
-.nav-active {
-  left: 0;
-}
-
-.theme-btn-active {
-  background-color: var(--color-green-700);
-}
-
-.open-theme-options {
-  display: block;
-}
-
-.rotate-theme-arrow {
-  transform: rotate(0);
 }
 
 @media (min-width: 575px) {
@@ -232,6 +232,10 @@
   }
 
   .theme-option:hover {
+    background-color: var(--color-green-700);
+  }
+
+  .theme-option-active {
     background-color: var(--color-green-800);
   }
 
