@@ -3,7 +3,7 @@
   background-color: var(--color-primary);
   top: 0;
   bottom: 0;
-  left: -212px;
+  /* left: -212px; */
   max-width: 212px;
   width: 100%;
   z-index: 2;
@@ -83,14 +83,18 @@
   background-color: var(--color-green-600);
 }
 
-.header-dive-deeper .icon-double-arrow {
+.theme-option-active {
+  background-color: var(--color-green-600);
+}
+
+.nav-dive-deeper .icon-double-arrow {
   width: 13px;
   height: 15px;
   margin-left: 6px;
   margin-top: 2px;
 }
 
-.header-dive-deeper {
+.nav-dive-deeper {
   background-color: var(--color-green-800);
   width: fit-content;
   height: 31px;
@@ -106,7 +110,7 @@
   justify-content: center;
 }
 
-.header-dive-deeper:hover {
+.nav-dive-deeper:hover {
   background-color: var(--color-secondary);
 }
 
@@ -231,13 +235,13 @@
     background-color: var(--color-green-800);
   }
 
-  .header-dive-deeper {
+  .nav-dive-deeper {
     margin-top: 0;
     padding: 9px 15px;
     font-size: 16px;
   }
 
-  .header-dive-deeper .icon {
+  .nav-dive-deeper .icon {
     display: none;
   }
 }
