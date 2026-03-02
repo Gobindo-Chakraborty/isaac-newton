@@ -46,7 +46,7 @@
   background-color: var(--color-green-800);
 }
 
-.nav-link.active {
+.nav-link.is-active {
   background-color: var(--color-green-800);
 }
 
@@ -159,7 +159,7 @@
   }
 
   .nav-link:hover,
-  .nav-link:focus {
+  .nav-link.is-active {
     background-color: transparent;
     color: var(--color-green-800);
   }
