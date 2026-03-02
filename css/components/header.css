@@ -37,7 +37,7 @@
   color: var(--color-green-800);
 }
 
-@media (min-width: 575px) {
+@media (min-width: 576px) {
   .header__container {
     padding-top: 14px;
     padding-bottom: 17px;
