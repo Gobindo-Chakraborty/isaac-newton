@@ -16,19 +16,6 @@
 }
 
 /* Reused Styles */
-.overlay {
-  position: fixed;
-  background-color: var(--color-secondary);
-  inset: 0;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.active {
-  opacity: 0.5;
-  pointer-events: all;
-}
 
 .card-hover {
   transition: box-shadow 0.2s ease;
