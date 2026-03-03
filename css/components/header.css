@@ -83,16 +83,13 @@
 }
 
 @media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
   .header__container {
     padding-top: 14px;
     padding-bottom: 17px;
   }
 
   .logo {
-    margin-left: 0;
+    margin-left: 40px;
   }
 
   .logo img {
@@ -102,5 +99,13 @@
 
   .open-menu-btn {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+  .logo {
+    margin-left: 0;
   }
 }
