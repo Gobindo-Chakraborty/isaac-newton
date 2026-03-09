@@ -1,17 +1,22 @@
 :root {
   /* Colors */
-  --color-primary: #34252c;
-  --color-secondary: #211c19;
+  --color-primary: hsl(332, 17%, 17%);
+  --color-secondary: hsl(22, 14%, 11%);
 
-  --color-green-800: #698b11;
-  --color-green-700: rgba(104, 139, 17, 0.5);
-  --color-green-600: rgba(104, 139, 17, 0.1);
+  --bg-color: hsl(22, 14%, 11%);
+  --fg-color: hsl(332, 17%, 17%);
 
-  --color-gray-500: #9f7e8d;
-  --color-gray-100: #eeeeee;
+  --color-green-800: hsl(77, 78%, 31%);
+  --color-green-700: hsla(77, 78%, 31%, 0.5);
+  --color-green-600: hsla(77, 78%, 31%, 0.1);
 
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-gray-500: hsl(333, 15%, 56%);
+  --color-gray-100: hsl(0, 0%, 93%);
+
+  --text-color-primary: hsl(0, 0%, 93%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
 
   /* Gradients */
 
@@ -19,20 +24,20 @@
   --font-primary: "Inter", sans-serif;
 
   /* Font-size */
-  --font-size-display: 3.2rem;
+  --fs-display: 3.2rem;
 
-  --font-size-h1: 2.4rem;
-  --font-size-h2: 1.8rem;
-  --font-size-h3: 2rem;
+  --fs-h1: 2.4rem;
+  --fs-h2: 1.8rem;
+  --fs-h3: 2rem;
 
-  --font-size-body: 1.5rem;
-  --font-size-body-md: 1.5rem;
-  --font-size-body-sm: 1.4rem;
-  --font-size-body-tiny: 1.2rem;
+  --fs-body: clamp(1.5rem, calc(1rem + 1.5vw), 2.4rem);
+  --fs-body-md: 1.5rem;
+  --fs-body-sm: 1.4rem;
+  --fs-body-tiny: 1.2rem;
 
-  --font-size-sm-1: 1.4rem;
-  --font-size-sm-2: 1.3rem;
-  --font-size-sm-3: 1.2rem;
+  --fs-sm-1: 1.4rem;
+  --fs-sm-2: 1.3rem;
+  --fs-sm-3: 1.2rem;
 
   /* Font-weight */
   --weight-regular: 400;
@@ -43,10 +48,10 @@
   /* Letter-spacing */
 
   /* Section-space */
-  --section-space: 5rem;
+  --section-space: max(71px, 17vw);
 
   /* Scroll-space */
-  --scroll-margin-top: 7.1rem;
+  --scroll-margin-top: 71px;
 
   /* Shadow */
   --shadow-sm: 7px 8px 4px 0 rgba(0, 0, 0, 0.25);
@@ -57,4 +62,29 @@
   --radius-1: clamp(29px, 9.06vw, 50px);
 
   /* Transition */
+}
+
+@media (min-width: 576px) {
+  :root {
+    --section-space: calc(110px + 2vw);
+
+    --scroll-margin-top: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-body: clamp(1.5rem, 2vw, 2.4rem);
+
+    --section-space: clamp(130px, 15vw, 184px);
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
 }

@@ -1,9 +1,5 @@
 body {
-  background-color: var(--color-secondary);
-}
-
-main {
-  padding-top: 2.1rem;
+  background-color: var(--bg-color);
 }
 
 section {
@@ -20,6 +16,10 @@ section {
 }
 
 @media (min-width: 768px) {
+  section .container {
+    width: 80%;
+    max-width: 1035px;
+  }
 }
 
 @media (min-width: 992px) {

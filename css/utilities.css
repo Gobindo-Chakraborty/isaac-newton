@@ -1,13 +1,13 @@
 /* Typography */
 .section-heading {
-  font-size: var(--font-size-h1);
+  font-size: var(--fs-h1);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   text-align: center;
 }
 
 .section-subtitle {
-  font-size: var(--font-size-body-tiny);
+  font-size: var(--fs-body-tiny);
   color: var(--color-green-800);
   line-height: 1.25;
   margin-top: 6px;

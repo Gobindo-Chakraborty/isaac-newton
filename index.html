@@ -187,32 +187,35 @@
       </div>
     </header>
 
-    <main id="top">
+    <main>
       <section id="home">
         <div class="container">
-          <img
-            src="./assets/images/isaac-newton.jpg"
-            alt="Isaac Newton"
-            class="profile-img"
-          />
-          <div class="profile-description">
-            <p class="profile-title">Hello, my name is</p>
-            <h1 class="profile-name">Isaac Newton</h1>
-            <p class="profile-text">
-              You may know me as the man who discovered gravity, but my work
-              spans mathematics, physics, and astronomy. Explore my discoveries
-              and see how I changed the way we understand the universe!
-            </p>
-            <a
-              href="./dive-deeper.html"
-              class="profile-dive-deeper"
-              data-icon="doubleArrow"
-            >
-              Dive Deeper
-              <svg class="icon">
-                <use href="./assets/icons/sprite.svg#icon-double-arrow"></use>
-              </svg>
-            </a>
+          <div class="hero">
+            <img
+              src="./assets/images/isaac-newton.jpg"
+              alt="Isaac Newton"
+              class="hero-img"
+            />
+            <div class="hero-content">
+              <p class="hero-content__subtitle">Hello, my name is</p>
+              <h1 class="hero-content__name">Isaac Newton</h1>
+              <p class="hero-content__text">
+                You may know me as the man who discovered gravity, but my work
+                spans mathematics, physics, and astronomy. Explore my
+                discoveries and see how I changed the way we understand the
+                universe!
+              </p>
+              <a
+                href="./dive-deeper.html"
+                class="hero-content__dive-deeper"
+                data-icon="doubleArrow"
+              >
+                Dive Deeper
+                <svg class="icon icon-double-arrow">
+                  <use href="./assets/icons/sprite.svg#icon-double-arrow"></use>
+                </svg>
+              </a>
+            </div>
           </div>
           <article class="about-me">
             <h2>About Me</h2>
@@ -478,7 +481,7 @@
     </footer>
 
     <div class="back-to-top">
-      <a href="#top">
+      <a href="#">
         <img src="./assets/images/back-to-top.png" alt="Back to top" />
       </a>
     </div>

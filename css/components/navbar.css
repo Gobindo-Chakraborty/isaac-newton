@@ -38,7 +38,7 @@
 .nav-link,
 .theme-btn,
 .theme-option {
-  font-size: var(--font-size-sm-1);
+  font-size: var(--fs-sm-1);
   font-weight: var(--weight-bold);
   padding: 10px;
 }
@@ -114,7 +114,7 @@
   border-radius: 19px;
   margin-inline: auto;
   padding: 7px 18px;
-  font-size: var(--font-size-sm-1);
+  font-size: var(--fs-sm-1);
   font-weight: var(--weight-bold);
   line-height: normal;
   margin-top: 33px;
@@ -355,124 +355,3 @@
     margin-right: 0;
   }
 }
-
-/* @media (min-width: 1200px) {
-  .navbar {
-    position: static;
-    background-color: transparent;
-    max-width: none;
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    overflow-y: visible;
-  }
-
-  .close-menu-btn {
-    display: none;
-  }
-
-  .navbar-list {
-    display: flex;
-    margin-right: 127px;
-    gap: 64px;
-    align-items: center;
-  }
-
-  .nav-link {
-    font-weight: var(--weight-regular);
-    font-size: 1.6rem;
-    padding: 0;
-  }
-
-  .nav-link:hover,
-  .nav-link.is-active {
-    background-color: transparent;
-    color: var(--color-green-800);
-  }
-
-  .theme-btn span,
-  .theme-btn .icon-arrow-up,
-  .theme-option span:first-of-type {
-    display: none;
-  }
-
-  .theme-container {
-    position: relative;
-    margin-right: 40px;
-  }
-
-  .theme-btn .icon-moon {
-    display: block;
-    width: 20px;
-    height: 20px;
-  }
-
-  .theme-btn {
-    height: 40px;
-    width: 40px;
-    padding: 8px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    background-color: transparent;
-  }
-
-  .theme-btn .icon-moon,
-  .theme-option .icon,
-  .theme-option .icon + span {
-    display: inline-block;
-  }
-
-  .theme-option .icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .theme-options {
-    position: absolute;
-    width: 156px;
-    height: auto;
-    right: -20px;
-    padding-top: 27px;
-    background-color: var(--color-primary);
-    display: none;
-  }
-
-  .theme-option {
-    height: 51px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 19px;
-    font-size: 16px;
-    font-weight: var(--weight-regular);
-  }
-
-  .theme-container:hover .theme-btn {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-color: #383838;
-  }
-
-  .theme-container:hover .theme-options {
-    display: block;
-  }
-
-  .theme-option:hover {
-    background-color: var(--color-green-700);
-  }
-
-  .theme-option-active {
-    background-color: var(--color-green-800);
-  }
-
-  .nav-dive-deeper {
-    margin-top: 0;
-    padding: 9px 15px;
-    font-size: 16px;
-  }
-
-  .nav-dive-deeper .icon {
-    display: none;
-  }
-} */

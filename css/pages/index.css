@@ -1,52 +1,59 @@
 /* Home */
-.profile-img {
-  width: 120px;
+
+.hero {
+  display: grid;
+  gap: 20px;
+}
+
+.hero-img {
+  width: clamp(120px, 35vw, 375px);
   height: auto;
-  margin-inline: auto;
-  border-radius: 20px;
+  border-radius: clamp(20px, 3vw, 50px);
   box-shadow: var(--shadow-lg);
+  justify-self: center;
 }
 
-.profile-description {
+.hero-content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
 }
 
-.profile-title {
+.hero-content__subtitle {
   font-weight: var(--weight-bold);
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--color-green-800);
   text-transform: uppercase;
-  margin-top: 2.2rem;
   line-height: normal;
 }
 
-.profile-name {
+.hero-content__name {
   font-weight: 800;
-  font-size: var(--font-size-display);
+  font-size: clamp(3.2rem, 8vw, 6.4rem);
   line-height: normal;
   text-transform: uppercase;
-  margin-top: 1.2rem;
 }
 
-.profile-text {
-  padding-inline: 5.4rem;
-  margin-top: 1.2rem;
+.hero-content__text {
+  max-width: 80%;
 }
 
-.profile-dive-deeper {
+.hero-content__dive-deeper {
   background-color: var(--color-primary);
   width: fit-content;
   height: 31px;
   border-radius: 19px;
   margin-inline: auto;
   padding: 7px 18px;
-  font-size: var(--font-size-sm-1);
+  font-size: var(--fs-sm-1);
   font-weight: var(--weight-bold);
   line-height: normal;
-  margin-top: 33px;
+  margin-top: 4px;
 }
 
-.profile-dive-deeper .icon {
+.hero-content__dive-deeper .icon {
   display: inline-block;
   width: 1.3rem;
   height: 8px;
@@ -54,7 +61,7 @@
   fill: none;
 }
 
-.profile-dive-deeper:hover {
+.hero-content__dive-deeper:hover {
   background-color: var(--color-green-800);
 }
 
@@ -73,7 +80,7 @@
   margin-top: 1.7rem;
   display: inline-block;
   line-height: normal;
-  font-size: var(--font-size-h2);
+  font-size: var(--fs-h2);
 }
 
 .about-me img {
@@ -107,7 +114,7 @@
 }
 
 .theory-card h2 {
-  font-size: var(--font-size-h3);
+  font-size: var(--fs-h3);
   font-weight: var(--weight-bold);
   margin-top: 10px;
 }
@@ -123,7 +130,7 @@
   text-align: center;
 }
 .book-card-container h1 {
-  font-size: var(--font-size-h2);
+  font-size: var(--fs-h2);
   text-transform: uppercase;
   font-weight: var(--weight-bold);
 }
@@ -142,7 +149,7 @@
 }
 
 .book-card h2 {
-  font-size: var(--font-size-h3);
+  font-size: var(--fs-h3);
   font-weight: var(--weight-bold);
   margin-top: 1rem;
 }
@@ -202,7 +209,7 @@
 }
 
 .legacy-heading {
-  font-size: var(--font-size-h2);
+  font-size: var(--fs-h2);
   text-transform: uppercase;
   font-weight: var(--weight-bold);
   margin-top: 3.4rem;
@@ -232,7 +239,7 @@
 }
 
 .fund-text h3 {
-  font-size: var(--font-size-h3);
+  font-size: var(--fs-h3);
   font-weight: var(--weight-bold);
 }
 
@@ -283,7 +290,7 @@ input {
 
 input::placeholder {
   color: var(--color-gray-500);
-  font-size: var(--font-size-sm-3);
+  font-size: var(--fs-sm-3);
 }
 
 .submit-btn {
@@ -333,6 +340,49 @@ input::placeholder {
 
 .contact-links_list div h3 {
   font-weight: var(--weight-regular);
-  font-size: var(--font-size-body-md);
+  font-size: var(--fs-body-md);
   line-height: 1.5;
+}
+
+@media (min-width: 576px) {
+  .hero {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-img {
+    justify-self: start;
+  }
+
+  .hero-content {
+    text-align: right;
+    align-items: end;
+  }
+
+  .hero-content__subtitle {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+
+  .hero-content__name {
+    font-size: clamp(3.6rem, 4vw, 6.4rem);
+    margin-block: clamp(3px, 0.2vw, 42px);
+  }
+
+  .hero-content__text {
+    max-width: 100%;
+    font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+  }
+
+  .hero-content__dive-deeper {
+    margin-top: auto;
+    margin-inline: 0;
+  }
+}
+
+@media (min-width: 992px) {
 }

@@ -5,9 +5,9 @@ html {
 
 body {
   font-family: var(--font-primary);
-  font-size: var(--font-size-body);
+  font-size: var(--fs-body);
   font-weight: var(--weight-regular);
-  color: var(--color-gray-100);
+  color: var(--text-color-primary);
 }
 
 body p {
@@ -20,5 +20,5 @@ body p {
 }
 
 button {
-  color: var(--color-gray-100);
+  color: var(--text-color-primary);
 }
