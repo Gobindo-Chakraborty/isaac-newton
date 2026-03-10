@@ -68,15 +68,17 @@
   :root {
     --section-space: calc(110px + 2vw);
 
-    --scroll-margin-top: 110px;
+    --scroll-margin-top: calc(110px + 2vw);
   }
 }
 
 @media (min-width: 768px) {
   :root {
-    --fs-body: clamp(1.5rem, 2vw, 2.4rem);
+    --fs-body: clamp(1.5rem, 2.5vw, 2.4rem);
 
     --section-space: clamp(130px, 15vw, 184px);
+
+    --scroll-margin-top: clamp(130px, 15vw, 184px);
   }
 }
 

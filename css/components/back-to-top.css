@@ -1,7 +1,16 @@
 .back-to-top {
   position: fixed;
-  right: 14px;
+  width: 100%;
+  max-width: 1280px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 14px;
+  display: flex;
+  justify-content: end;
+}
+
+.back-to-top a {
+  margin-right: 14px;
 }
 
 .back-to-top img {
