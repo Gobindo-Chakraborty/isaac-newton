@@ -27,7 +27,7 @@
   --fs-display: 3.2rem;
 
   --fs-h1: 2.4rem;
-  --fs-h2: 1.8rem;
+  --fs-h2: clamp(1.8rem, 3.3vw, 3.2rem);
   --fs-h3: 2rem;
 
   --fs-body: clamp(1.5rem, calc(1rem + 1.5vw), 2.4rem);
@@ -42,6 +42,7 @@
   /* Font-weight */
   --weight-regular: 400;
   --weight-bold: 600;
+  --weight-bolder: 700;
 
   /* Line-height */
 
