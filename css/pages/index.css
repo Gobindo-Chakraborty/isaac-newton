@@ -140,11 +140,11 @@
   font-size: var(--fs-body-md);
 }
 
-.book-card-container {
+.greatest-work {
   margin-top: 4.7rem;
   text-align: center;
 }
-.book-card-container h1 {
+.greatest-work h1 {
   font-size: var(--fs-h2);
   text-transform: uppercase;
   font-weight: var(--weight-bold);
@@ -435,7 +435,7 @@ input::placeholder {
     width: min(30vw, 290px);
   }
 
-  .book-card-container h1 {
+  .greatest-work h1 {
     --weight-bold: 700;
   }
 }
