@@ -1,7 +1,7 @@
 /* Typography */
 .section-heading {
   font-size: var(--fs-h1);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-bolder);
   text-transform: uppercase;
   text-align: center;
 }
@@ -12,13 +12,14 @@
   line-height: 1.25;
   margin-top: 6px;
   text-align: center;
-  margin-inline: 2.8rem;
+  margin-inline: auto;
 }
 
 /* Reused Styles */
 
 .card-hover {
   transition: box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .card-hover:hover {

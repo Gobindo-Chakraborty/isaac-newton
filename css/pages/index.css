@@ -103,18 +103,24 @@
 
 /* My Discoveries */
 
-.theory-card {
-  background-color: var(--color-primary);
-  margin-top: 3.1rem;
-  margin-inline: 2rem;
-  border-radius: 20px;
-  padding: 2.3rem 2rem 1.6rem 2rem;
-  text-align: center;
-  max-width: fit-content;
+.discoveries-subtitle {
+  width: min(80%, 350px);
 }
 
-.theory-card:first-of-type {
-  margin-top: 2.8rem;
+.theory-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: clamp(2.8rem, 5vw, 7.2rem);
+  gap: 3.1rem;
+  width: min(80%, 500px);
+  margin-inline: auto;
+}
+
+.theory-card {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-2);
+  padding: 2.3rem 2.3rem 1.6rem 2.3rem;
+  text-align: center;
 }
 
 .theory-card img {
@@ -124,13 +130,14 @@
 .theory-card h2 {
   font-size: var(--fs-h3);
   font-weight: var(--weight-bold);
-  margin-top: 10px;
+  margin-top: clamp(10px, 4vw, 29px);
 }
 
 .theory-card p {
-  margin-top: 6px;
-  max-width: 23.7rem;
+  margin-top: clamp(6px, 3vw, 16px);
+  width: min(60vw, 380px);
   margin-inline: auto;
+  font-size: var(--fs-body-md);
 }
 
 .book-card-container {
@@ -409,6 +416,27 @@ input::placeholder {
 
   .about-me__text {
     padding-top: 3rem;
+  }
+
+  .discoveries-subtitle {
+    width: clamp(470px, 50vw, 620px);
+    line-height: 1.5;
+  }
+
+  .theory-card-container {
+    width: 100%;
+    max-width: 825px;
+    justify-content: space-between;
+    row-gap: min(4vw, 55px);
+    grid-template-columns: repeat(2, min(37vw, 373px));
+  }
+
+  .theory-card p {
+    width: min(30vw, 290px);
+  }
+
+  .book-card-container h1 {
+    --weight-bold: 700;
   }
 }
 

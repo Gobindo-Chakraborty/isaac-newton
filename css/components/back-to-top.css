@@ -7,10 +7,12 @@
   bottom: 14px;
   display: flex;
   justify-content: end;
+  pointer-events: none;
 }
 
 .back-to-top a {
   margin-right: 14px;
+  pointer-events: auto;
 }
 
 .back-to-top img {

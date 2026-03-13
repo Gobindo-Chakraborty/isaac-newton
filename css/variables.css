@@ -26,14 +26,14 @@
   /* Font-size */
   --fs-display: 3.2rem;
 
-  --fs-h1: 2.4rem;
+  --fs-h1: clamp(2.4rem, 4vw, 4.8rem);
   --fs-h2: clamp(1.8rem, 3.3vw, 3.2rem);
-  --fs-h3: 2rem;
+  --fs-h3: clamp(2rem, 5vw, 2.4rem);
 
   --fs-body: clamp(1.5rem, calc(1rem + 1.5vw), 2.4rem);
-  --fs-body-md: 1.5rem;
+  --fs-body-md: clamp(1.5rem, calc(1rem + 1.5vw), 2rem);
   --fs-body-sm: 1.4rem;
-  --fs-body-tiny: 1.2rem;
+  --fs-body-tiny: clamp(1.2rem, 2.2vw, 1.6rem);
 
   --fs-sm-1: 1.4rem;
   --fs-sm-2: 1.3rem;
@@ -61,6 +61,7 @@
 
   /* Border-radius */
   --radius-1: clamp(29px, 9.06vw, 50px);
+  --radius-2: clamp(29px, 9.06vw, 50px);
 
   /* Transition */
 }
@@ -80,6 +81,9 @@
     --section-space: clamp(130px, 15vw, 184px);
 
     --scroll-margin-top: clamp(130px, 15vw, 184px);
+
+    --radius-1: 29px;
+    --radius-2: 32px;
   }
 }
 
