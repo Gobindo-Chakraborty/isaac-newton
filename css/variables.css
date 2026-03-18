@@ -37,7 +37,7 @@
 
   --fs-sm-1: 1.4rem;
   --fs-sm-2: 1.3rem;
-  --fs-sm-3: 1.2rem;
+  --fs-sm-3: clamp(1.2rem, 3vw, 1.5rem);
 
   /* Font-weight */
   --weight-regular: 400;
