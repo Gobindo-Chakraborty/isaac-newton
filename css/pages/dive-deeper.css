@@ -4,17 +4,19 @@
 
 .section-text {
   text-align: center;
-  margin-inline: 3.2rem;
-  margin-top: 1.3rem;
+  margin-top: clamp(13px, 2vw, 39px);
+  width: min(85%, 930px);
+  margin-inline: auto;
 }
 
 .today-universe {
-  margin-top: 3rem;
-  margin-inline: 2rem;
+  margin-top: clamp(30px, 5vw, 41px);
+  margin-inline: auto;
   text-align: center;
   background-color: var(--color-primary);
   border-radius: 1rem;
   box-shadow: var(--shadow-md);
+  width: min(85%, 448px);
 }
 
 .today-universe .img-wrapper {
@@ -27,6 +29,7 @@
 
 .today-universe p {
   padding: 6px 15px 10px 15px;
+  margin-inline: auto;
 }
 
 .today-universe p span {
@@ -40,7 +43,7 @@
 
 .quotes-section {
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: clamp(25px, 5vw, 79px);
 }
 
 .quotes-section h1 {
@@ -54,25 +57,66 @@
   flex-direction: column;
   align-items: center;
   border-radius: 1rem;
-  gap: 2.3rem;
-  margin-top: 2.2rem;
-  margin-bottom: 8.7rem;
+  gap: clamp(23px, 4vw, 63px);
+  margin-top: clamp(22px, 3vw, 54px);
+  margin-bottom: clamp(46px, 10vw, 100px);
 }
 
-.quotes-wrapper div img {
-  width: 9px;
+.quote {
+  background-color: var(--color-primary);
+  width: min(85%, 448px);
+  padding-block: clamp(14px, 5vw, 65px) clamp(13px, 5vw, 64px);
+  border-radius: 1rem;
+}
+
+.quote-one {
+  padding-inline: clamp(15px, 13vw, 140px);
+}
+
+.quote-two {
+  padding-inline: clamp(15px, 6vw, 80px);
+}
+
+.quote img {
+  width: clamp(9px, 3vw, 25px);
   height: auto;
   margin-inline: auto;
 }
 
-.quotes-wrapper div {
-  background-color: var(--color-primary);
-  width: 28rem;
-  padding: 14px 47px 13px 48px;
-  border-radius: 1rem;
+.quote p {
+  font-size: var(--fs-body-lg);
+  font-weight: 500;
+  padding-top: 2px;
 }
 
-.quotes-wrapper div p {
-  padding-top: 2px;
-  font-weight: 500;
+@media (min-width: 576px) {
+  .today-universe p {
+    padding: 22px 24px 24px 25px;
+  }
+
+  .quote {
+    width: min(80%, 500px);
+  }
+
+  .quote p {
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote {
+    width: min(80%, 600px);
+  }
+}
+
+@media (min-width: 992px) {
+  .quote {
+    width: min(80%, 700px);
+  }
+}
+
+@media (min-width: 1400px) {
+  .quote {
+    width: min(80%, 777px);
+  }
 }

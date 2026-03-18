@@ -27,6 +27,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/utilities.css" />
     <link rel="stylesheet" href="./css/layout.css" />
@@ -43,12 +44,12 @@
   </head>
   <body data-page="dive-deeper">
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
         <a href="./dive-deeper.html" class="logo">
           <img
             src="./assets/images/logo.png"
-            width="62"
-            height="33"
+            width="876"
+            height="467"
             alt="Isaac Newton"
           />
         </a>
@@ -60,8 +61,12 @@
             aria-label="Close menu"
             data-nav-toggler
           >
-            <img src="./assets/icons/cancel-icon.svg" alt="" />
+            <svg class="icon icon-cancel">
+              <use href="./assets/icons/sprite.svg#icon-cancel"></use>
+            </svg>
           </button>
+
+          <div class="navbar-overlay" data-nav-toggler></div>
 
           <ul class="navbar-list">
             <li class="navbar-item">
@@ -87,26 +92,53 @@
             </li>
           </ul>
 
-          <button
-            class="theme-btn nav-link"
-            type="button"
-            aria-label="Choose theme"
-          >
-            Theme
-            <span class="theme-arrow">
-              <img src="./assets/icons/arrow-up-icon.svg" alt="" />
-            </span>
-          </button>
+          <div class="theme-container">
+            <button class="theme-btn" type="button" aria-label="Choose theme">
+              <span>Theme</span>
+              <svg class="icon icon-arrow-up">
+                <use href="./assets/icons/sprite.svg#icon-arrow-up"></use>
+              </svg>
+              <svg class="icon icon-moon">
+                <use href="./assets/icons/sprite.svg#icon-moon"></use>
+              </svg>
+            </button>
 
-          <div class="theme-option">
-            <a href="#" class="theme-item nav-link">Light theme</a>
-            <a href="#" class="theme-item nav-link">Dark theme</a>
-            <a href="#" class="theme-item nav-link">Device theme</a>
+            <div class="theme-options">
+              <button type="button" class="theme-option" data-theme="light">
+                <span>Light theme</span>
+
+                <svg class="icon icon-sun">
+                  <use href="./assets/icons/sprite.svg#icon-sun"></use>
+                </svg>
+                <span>Light</span>
+              </button>
+
+              <button type="button" class="theme-option" data-theme="dark">
+                <span>Dark theme</span>
+
+                <svg class="icon icon-moon">
+                  <use href="./assets/icons/sprite.svg#icon-moon"></use>
+                </svg>
+                <span>Dark</span>
+              </button>
+
+              <button type="button" class="theme-option" data-theme="auto">
+                <span>Device theme</span>
+
+                <svg class="icon icon-computer">
+                  <use href="./assets/icons/sprite.svg#icon-computer"></use>
+                </svg>
+                <span>Auto</span>
+              </button>
+            </div>
           </div>
 
-          <a href="./dive-deeper.html" class="dive-deeper"
-            >Dive Deeper<img src="./assets/icons/double-arrow-icon.svg" alt=""
-          /></a>
+          <a href="./index.html" class="nav-dive-deeper"
+            >Go Home
+            <svg class="icon icon-double-arrow">
+              <use href="./assets/icons/sprite.svg#icon-double-arrow"></use>
+            </svg>
+          </a>
         </nav>
 
         <button
@@ -115,7 +147,7 @@
           aria-label="Open menu"
           data-nav-toggler
         >
-          <svg class="icon">
+          <svg class="icon icon-mobile-menu">
             <use href="./assets/icons/sprite.svg#icon-mobile-menu"></use>
           </svg>
         </button>
@@ -154,18 +186,19 @@
           <div class="quotes-section">
             <h1>Quotes</h1>
             <div class="quotes-wrapper">
-              <div>
+              <div class="quote quote-one">
                 <img src="./assets/icons/double-quote-icon.svg" alt="Quote 1" />
                 <p>
                   If I have seen further, it is by standing on the shoulders of
                   giants.
                 </p>
               </div>
-              <div>
+              <div class="quote quote-two">
                 <img src="./assets/icons/double-quote-icon.svg" alt="Quote 2" />
                 <p>
-                  If I have seen further, it is by standing on the shoulders of
-                  giants.
+                  To myself, I seem to have been only like a boy playing on the
+                  seashore, while the great ocean of truth lay undiscovered
+                  before me.
                 </p>
               </div>
             </div>
@@ -184,7 +217,7 @@
         </div>
         <div class="copyright-text">
           <p class="copyright-legacy">
-            <span>© 2025 Isaac Newton Legacy</span> | Website by
+            <span>&copy; 2025 Isaac Newton Legacy</span> | Website by
             <span>Gobindo Chakraborty</span>
           </p>
           <p class="copyright-reserve">
@@ -195,7 +228,7 @@
     </footer>
 
     <div class="back-to-top">
-      <a href="#top">
+      <a href="#">
         <img src="./assets/images/back-to-top.png" alt="Back to top" />
       </a>
     </div>

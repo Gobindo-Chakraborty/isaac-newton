@@ -33,6 +33,7 @@
   --fs-body: clamp(1.5rem, calc(1rem + 1.5vw), 2.4rem);
   --fs-body-md: clamp(1.5rem, calc(1rem + 1.5vw), 2rem);
   --fs-body-sm: 1.4rem;
+  --fs-body-lg: clamp(1.6rem, calc(1rem + 1.6vw), 3.2rem);
   --fs-body-tiny: clamp(1.2rem, 2.2vw, 1.6rem);
 
   --fs-sm-1: 1.4rem;
