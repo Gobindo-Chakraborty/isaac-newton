@@ -1,4 +1,9 @@
 [data-theme="light"] {
-  --bg-color: #302a22;
-  --fg-color: #43402f;
+  --color-primary: hsl(51, 18%, 22%);
+  --color-secondary: hsl(34, 17%, 16%);
+
+  --bg-color: hsl(34, 17%, 16%);
+  --fg-color: hsl(51, 18%, 22%);
+
+  --color-gray-500: hsl(46, 26%, 48%);
 }
