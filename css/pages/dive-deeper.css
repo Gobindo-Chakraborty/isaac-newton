@@ -34,6 +34,7 @@
 
 .today-universe p span {
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 .today-universe p span:hover {

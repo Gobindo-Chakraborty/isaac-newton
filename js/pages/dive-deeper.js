@@ -1,4 +1,5 @@
 import "../components/header.js";
+import "../components/back-to-top.js";
 import { navToggler } from "../components/navbar.js";
 import {
   themeBtnToggler,

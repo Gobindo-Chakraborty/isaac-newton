@@ -8,6 +8,13 @@
   display: flex;
   justify-content: end;
   pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .back-to-top a {
