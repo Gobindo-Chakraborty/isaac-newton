@@ -78,10 +78,11 @@
   padding-inline: clamp(15px, 6vw, 80px);
 }
 
-.quote img {
-  width: clamp(9px, 3vw, 25px);
-  height: auto;
+.quote svg {
+  height: clamp(8px, 3vw, 22px);
+  width: auto;
   margin-inline: auto;
+  color: var(--color-icon-500);
 }
 
 .quote p {

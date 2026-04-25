@@ -263,14 +263,15 @@
   gap: clamp(9px, 1vw, 18px);
 }
 
-.research-fund img,
+.research-fund svg,
 .fund-text {
   cursor: pointer;
 }
 
-.research-fund img {
+.research-fund svg {
   height: clamp(68px, 10vw, 102px);
   width: auto;
+  color: var(--color-icon-500);
 }
 
 .fund-text {
@@ -398,9 +399,10 @@ textarea::placeholder {
   gap: 1.8rem;
 }
 
-.contact-links__list div img {
+.contact-links__list div svg {
   height: clamp(63px, 8vw, 74px);
   width: auto;
+  color: var(--color-icon-500);
 }
 
 .contact-links__list div h3 {
