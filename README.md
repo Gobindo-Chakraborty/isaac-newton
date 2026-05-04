@@ -2,6 +2,6 @@
 
 ![Preview Image](./assets/images/newton-preview.jpg)
 
-## [Live Demo](https://gobindo-chakraborty.github.io/isaac-newton/)
+## [Live Demo](https://isaac-newton.hellogbc.com/)
 
-HTML | CSS | JS
+HTML | CSS | JS | Nodejs | MongoDB | Jest
