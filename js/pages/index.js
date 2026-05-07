@@ -7,6 +7,7 @@ import {
   activeThemeOption,
 } from "../components/theme.js";
 import { changeCopyRightYear } from "../utils/util.js";
+import "../components/falling-apple.js";
 
 intersectionObserver();
 navToggler();
