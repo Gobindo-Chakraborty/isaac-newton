@@ -6,9 +6,11 @@ import {
   applyTheme,
   activeThemeOption,
 } from "../components/theme.js";
+import { changeCopyRightYear } from "../utils/util.js";
 
 intersectionObserver();
 navToggler();
 themeBtnToggler();
 applyTheme();
 activeThemeOption();
+changeCopyRightYear();

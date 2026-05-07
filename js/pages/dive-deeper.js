@@ -6,8 +6,10 @@ import {
   applyTheme,
   activeThemeOption,
 } from "../components/theme.js";
+import { changeCopyRightYear } from "../utils/util.js";
 
 navToggler();
 themeBtnToggler();
 applyTheme();
 activeThemeOption();
+changeCopyRightYear();
